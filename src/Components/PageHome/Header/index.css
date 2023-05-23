@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar-container {
+    position: relative;
+}
+
+.header-intro-container {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* md screens and smaller */
+@media (max-width: 767px) {
+    .header-intro {
+        margin-block: 1rem;
+    }
+    
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    .avatar-container {
+        margin-top: .5rem;
+    }
+}
+
+/* larger than md screens */
+@media (min-width: 768px) {
+    .header-intro {
+        margin-block: 4rem;
+    }
+    
+    .header {
+        margin-bottom: 2rem;
+    }
+    
+    .avatar-container {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1062px) {
+    .header-intro {
+        margin-block: 5.5rem;
+    }
+}
